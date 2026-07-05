@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dramameme — AI-Assisted Meme Drama Videos</title>
+  <meta name="description" content="Dramameme helps creators generate AI-assisted meme drama videos, review videos and captions, and publish approved clips to TikTok." />
+  <meta name="theme-color" content="#090914" />
+  <link rel="icon" href="app-icon.png" />
+  <link rel="apple-touch-icon" href="app-icon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <nav class="nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a class="brand" href="./" aria-label="Dramameme home">
+        <span class="brand-mark">DM</span>
+        <span>Dramameme</span>
+      </a>
+      <div class="nav-links">
+        <a href="#how-it-works">How it works</a>
+        <a href="#tiktok">TikTok integration</a>
+        <a href="#safety">Safety</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+        <a class="btn small" href="mailto:charlieevert@gmail.com">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <header class="hero">
+      <div>
+        <div class="kicker">Creator tool · AI-assisted video workflow</div>
+        <h1>Meme drama, <span>reviewed before it posts.</span></h1>
+        <p class="lede">Dramameme helps creators generate short AI-assisted meme drama videos, review the final video and caption, and publish approved clips to their own TikTok account.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#how-it-works">See workflow</a>
+          <a class="btn" href="#tiktok">TikTok API use</a>
+        </div>
+        <p class="notice">Dramameme is not affiliated with, endorsed by, or sponsored by TikTok. TikTok posting features require user authorization and creator approval before publishing.</p>
+        <div class="badge-row" aria-label="Key features">
+          <span class="badge">AI-assisted video generation</span>
+          <span class="badge">Creator review step</span>
+          <span class="badge">TikTok OAuth connection</span>
+          <span class="badge">Approved posts only</span>
+        </div>
+      </div>
+      <div class="mock" aria-label="Dramameme app preview">
+        <div class="phone">
+          <div class="video-card">
+            <div class="video-title">When the group chat becomes a courtroom ⚡</div>
+          </div>
+          <div class="step"><div class="num">1</div><div><b>Generate</b><span>Create a short AI-assisted meme drama clip.</span></div></div>
+          <div class="step"><div class="num">2</div><div><b>Review</b><span>Check the video, caption, hashtags, and visibility.</span></div></div>
+          <div class="step"><div class="num">3</div><div><b>Publish</b><span>Post to the creator's TikTok account only after approval.</span></div></div>
+        </div>
+      </div>
+    </header>
+
+    <section id="how-it-works">
+      <div class="section-head">
+        <div class="kicker">How it works</div>
+        <h2>A simple creator-controlled workflow.</h2>
+        <p class="lede">Dramameme is designed for creators who want speed without giving up review and control.</p>
+      </div>
+      <div class="grid three">
+        <article class="card">
+          <span class="pill">01 · Create</span>
+          <h3>Generate an episode</h3>
+          <p>The creator starts with a meme drama idea, topic, or template. Dramameme helps generate a short video concept, caption, and clip.</p>
+        </article>
+        <article class="card">
+          <span class="pill">02 · Review</span>
+          <h3>Approve the final version</h3>
+          <p>The creator reviews the video, title, caption, hashtags, and privacy settings. Nothing is sent to TikTok without user action.</p>
+        </article>
+        <article class="card">
+          <span class="pill">03 · Post</span>
+          <h3>Publish through TikTok</h3>
+          <p>After authorization and approval, Dramameme uses TikTok’s posting APIs to publish the creator-approved video to the creator’s TikTok account.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="tiktok">
+      <div class="section-head">
+        <div class="kicker">TikTok integration</div>
+        <h2>What Dramameme requests and why.</h2>
+      </div>
+      <div class="demo-panel">
+        <div class="card">
+          <h3>Developer products used</h3>
+          <ul>
+            <li><strong>Login Kit:</strong> lets a creator connect their own TikTok account through TikTok OAuth.</li>
+            <li><strong>Content Posting API:</strong> lets a creator publish an approved video from Dramameme to their own TikTok account.</li>
+          </ul>
+        </div>
+        <div class="status-box">
+          <div class="status-row"><span>Requested scope</span><b>user.info.basic</b></div>
+          <div class="status-row"><span>Purpose</span><b>Confirm connected account</b></div>
+          <div class="status-row"><span>Requested scope</span><b>video.publish</b></div>
+          <div class="status-row"><span>Purpose</span><b>Publish approved videos</b></div>
+          <div class="status-row"><span>Posting behavior</span><b>User-approved only</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="safety">
+      <div class="section-head">
+        <div class="kicker">Trust & safety</div>
+        <h2>No hidden or automatic posting.</h2>
+        <p class="lede">Dramameme is built around creator review. Users are responsible for their content and must follow TikTok’s terms, community guidelines, and developer policies.</p>
+      </div>
+      <div class="grid two">
+        <article class="card">
+          <h3>Creator control</h3>
+          <p>Users must connect their own TikTok account, review the generated media, and intentionally approve publishing. Dramameme does not post without authorization and approval.</p>
+        </article>
+        <article class="card">
+          <h3>AI-generated content</h3>
+          <p>Dramameme creates AI-assisted content. Generated videos should be reviewed before publishing and may be labeled or handled according to platform requirements.</p>
+        </article>
+        <article class="card">
+          <h3>Data minimization</h3>
+          <p>Dramameme uses TikTok account data and posting permissions only for account connection, review, and creator-approved publishing.</p>
+        </article>
+        <article class="card">
+          <h3>Contact and deletion</h3>
+          <p>Users can request support, account disconnect help, or deletion of app-related information by contacting <a href="mailto:charlieevert@gmail.com">charlieevert@gmail.com</a>.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>© 2026 Dramameme. Contact: <a href="mailto:charlieevert@gmail.com">charlieevert@gmail.com</a></div>
+      <div class="footer-links">
+        <a href="./">Home</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
