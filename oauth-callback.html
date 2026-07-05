@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dramameme TikTok Connected</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <main style="font-family: Arial, sans-serif; max-width: 720px; margin: 80px auto; padding: 24px;">
+    <h1>TikTok connection received</h1>
+    <p>This page receives the TikTok Login Kit redirect for Dramameme.</p>
+    <p id="status">Checking authorization response...</p>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get("code");
+    const error = params.get("error");
+    const status = document.getElementById("status");
+
+    if (code) {
+      status.textContent = "TikTok returned an authorization code. In production, Dramameme's backend exchanges this code for an access token.";
+    } else if (error) {
+      status.textContent = "TikTok returned an error: " + error;
+    } else {
+      status.textContent = "No TikTok authorization code was found.";
+    }
+  </script>
+</body>
+</html>
